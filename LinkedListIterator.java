@@ -8,7 +8,7 @@ public class LinkedListIterator<D> {
 
         while(tempNode != null){
 
-            System.out.print(tempNode.getData()+ " ");
+            System.out.print(tempNode.getData()+ "->");
             tempNode = tempNode.getNextNode();
         }
 
