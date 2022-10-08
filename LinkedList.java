@@ -4,6 +4,7 @@ public class LinkedList<D> {
     public Node<D> headNode = null;
     public Node<D> tailNode = null;
     public Node<D> tempNode = null;
+    private Node<D> prevNode = null;
 
     //create methode for adding data in node
 
@@ -23,6 +24,28 @@ public class LinkedList<D> {
 
         System.out.println("HeadNode Data = " +headNode.getData());
         System.out.println("TailNode Data = " +tempNode.getData());
+
+    }
+
+    public void pop(D dataToBeRemoved) {
+        if (headNode == null && tailNode == null && tailNode == null) {
+            return;
+        }
+        Node<D> currNode = headNode;
+        prevNode = headNode;
+
+        if (dataToBeRemoved == currNode.getData()) {
+            headNode = currNode.getNextNode();
+            currNode.setNextNode(null);
+        }
+
+        while (dataToBeRemoved != currNode.getData()) {
+            prevNode = currNode;
+            currNode = currNode.getNextNode();
+        }
+
+        prevNode.setNextNode(currNode.getNextNode());
+        currNode.setNextNode(null);
 
     }
 }

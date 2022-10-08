@@ -14,6 +14,10 @@ public class Main {
         linkedList.add(thirdNode);
 
 
+        //UC5 pop 56
+        linkedList.pop(56);
+
+
         LinkedListIterator<Integer> linkedListIterator = new LinkedListIterator<>();
         linkedListIterator.iterateLinkedList(linkedList);
 
