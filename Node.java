@@ -8,7 +8,7 @@ public class Node<D> {
 
     public Node(D data) {
         this.data = data;
-        System.out.println("NODE-" +data);
+       // System.out.println("NODE-" +data);
     }
 
 

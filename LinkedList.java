@@ -14,7 +14,7 @@ public class LinkedList<D> {
             tempNode = newNode;    // tempnode = fistnode value store
 
         } else {   // for second or next node
-            tempNode.setNextNode(newNode); // second node  will store in tempnode
+            tempNode.setNextNode(newNode);
             tailNode = newNode;
             tailNode.setNextNode(null);
             tempNode = newNode;
@@ -25,5 +25,4 @@ public class LinkedList<D> {
         System.out.println("TailNode Data = " +tempNode.getData());
 
     }
-
 }
