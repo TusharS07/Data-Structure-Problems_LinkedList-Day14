@@ -1,5 +1,5 @@
 package com.Bridgelabz.LinkedList_Day14;
-
+//
 public class Node<D> {
     private D data;
 

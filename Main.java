@@ -14,12 +14,17 @@ public class Main {
         linkedList.add(thirdNode);
 
 
-        //UC5 pop 56
-        linkedList.pop(56);
+        //UC5 delete first element 56
 
+        //linkedList.pop(56);
+
+        //UC6 delete last element 70
+
+        linkedList.pop(70);
 
         LinkedListIterator<Integer> linkedListIterator = new LinkedListIterator<>();
         linkedListIterator.iterateLinkedList(linkedList);
+
 
     }
 

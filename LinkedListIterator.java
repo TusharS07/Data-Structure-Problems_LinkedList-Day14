@@ -1,5 +1,5 @@
 package com.Bridgelabz.LinkedList_Day14;
-
+//
 public class LinkedListIterator<D> {
 
     public void iterateLinkedList(LinkedList<D> linkedList) {

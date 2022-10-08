@@ -26,7 +26,7 @@ public class LinkedList<D> {
         System.out.println("TailNode Data = " +tempNode.getData());
 
     }
-
+//
     public void pop(D dataToBeRemoved) {
         if (headNode == null && tailNode == null && tailNode == null) {
             return;
