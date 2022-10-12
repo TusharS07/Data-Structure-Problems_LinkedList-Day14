@@ -29,6 +29,12 @@ public class Main {
         Node<Integer> newNodeToBeInserted = new Node<>(30);
         linkedList.insert(newNodeToBeInserted,1);
 
+        //UC8 = Ability to insert 40 after 30 to the Linked List sequence of 56->30->70
+        //Final Sequence: 56->30->40->70
+        Node<Integer> newNodeToBeInserted2 = new Node<>(40);
+        linkedList.insert(newNodeToBeInserted2,3);
+
+
         LinkedListIterator<Integer> linkedListIterator = new LinkedListIterator<>();
         linkedListIterator.iterateLinkedList(linkedList);
 
