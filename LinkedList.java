@@ -48,4 +48,25 @@ public class LinkedList<D> {
         currNode.setNextNode(null);
 
     }
+
+
+    //method for insert in between
+
+    public void insert(Node<D> newNodeToBeInserted, int position) {
+        int index = 0;
+
+        Node<D> currNode = headNode;
+
+        while (index < position -2) {
+            currNode = currNode.getNextNode();
+            index++;
+        }
+
+        Node<D> nextNode = currNode.getNextNode();
+
+        newNodeToBeInserted.setNextNode(nextNode);
+
+        currNode.setNextNode(newNodeToBeInserted);
+    }
+
 }

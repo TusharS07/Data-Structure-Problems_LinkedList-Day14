@@ -20,7 +20,14 @@ public class Main {
 
         //UC6 delete last element 70
 
-        linkedList.pop(70);
+        //linkedList.pop(70);
+
+        linkedList.pop(30);
+
+        //UC4 Ability to insert 30 between 56 and 70
+
+        Node<Integer> newNodeToBeInserted = new Node<>(30);
+        linkedList.insert(newNodeToBeInserted,1);
 
         LinkedListIterator<Integer> linkedListIterator = new LinkedListIterator<>();
         linkedListIterator.iterateLinkedList(linkedList);
