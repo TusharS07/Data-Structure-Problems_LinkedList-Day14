@@ -34,6 +34,11 @@ public class Main {
         Node<Integer> newNodeToBeInserted2 = new Node<>(40);
         linkedList.insert(newNodeToBeInserted2,3);
 
+        //UC9 = Ability to delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedListis 3
+        linkedList.pop(40);
+
+
+
 
         LinkedListIterator<Integer> linkedListIterator = new LinkedListIterator<>();
         linkedListIterator.iterateLinkedList(linkedList);

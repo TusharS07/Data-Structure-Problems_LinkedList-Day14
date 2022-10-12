@@ -7,6 +7,7 @@ public class LinkedList<D> {
     private Node<D> prevNode = null;
 
     //create methode for adding data in node
+    //
 
     public void add(Node<D> newNode) {
         if (headNode == null && tailNode == null && tempNode == null) {
